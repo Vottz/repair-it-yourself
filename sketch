@@ -1,0 +1,87 @@
+// libraries for i2c and the specific display
+#include <Wire.h>
+#include "rgb_lcd.h"
+#include "Ultrasonic.h"
+ 
+Ultrasonic ultrasonic(7);
+rgb_lcd lcd;
+int led = 12;
+
+void setup() {
+  
+
+    pinMode(led, OUTPUT);
+    Serial.begin(9600);
+    // make sure the random is random
+    randomSeed(analogRead(0));
+    
+    // set up the LCD's number of columns and rows:
+    lcd.begin(16, 2);
+    
+    // Print our message to the LCD.
+    
+}
+
+void loop() {
+    byte red;
+    byte blue;
+    // Turn off the display:
+    lcd.noDisplay();
+    delay(500);
+
+    long distance = calcRangeInCentimeters();
+    lcd.begin(16, 2);
+    int randNum = random(0,6);
+    String text = randomText(randNum);
+    if (randNum > 3) {
+      red = 255;
+      blue = 0;
+    }
+    else{
+      red = 0;
+      blue = 255;
+    }
+  
+    // Turn on the display:
+    lcd.display();
+
+    if (distance < 20){
+      lcd.print(text.substring(0,16));
+      lcd.setCursor(0, 1);
+      lcd.print(text.substring(16));
+      lcd.setRGB(red, 0, blue);
+      digitalWrite(led,HIGH);
+      digitalWrite(10,HIGH);
+    }
+    else{
+      lcd.setRGB(0, 0, 0);
+      digitalWrite(led,LOW);
+    }
+    delay(3000);
+    
+}
+
+String randomText(int randNum){
+  String message[7] = {
+                       "WHO USES THIS MACHINE?"
+                      ,"WHO PAYS TO REPAIR IT?"
+                      ,"WHO PAYS TO REPLACE IT?"
+                      ,"WHO BUILD IT?"
+                      ,"WHO REPAIRS IT?"
+                      ,"WHO IS PAYED TO REPLACE IT?"
+                      ,"WHO KNOWS HOW THIS MACHINE WORKS?"
+                      };
+
+  return message[randNum];
+}
+
+
+long calcRangeInCentimeters(){
+    long RangeInCentimeters;
+ 
+    RangeInCentimeters = ultrasonic.MeasureInCentimeters(); // two measurements should keep an interval
+    Serial.print(RangeInCentimeters);//0~400cm
+    Serial.println(" cm");
+
+    return RangeInCentimeters;
+}
