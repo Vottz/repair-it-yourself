@@ -6,7 +6,7 @@ This is the Documentation for our university project, in the course [Hacking Inn
 
 
 ## Functions
-Our Arduino code has 3 Functions: 
+Our Arduino code has 4 Functions: 
 * setup(): the typical arduino setup function, here we define the randomSeed for the random number generator, the <LCDs groove text> matrix for setting the display functions and some of the LED lights <DO WE??>.
 * calcRangeInCentimeters(): calculates the distance from the <INSERT NAME OF SENSOR + LINK> in centimeters
 * randomText(int randNum): with the input of a random number between 0 and 6, one of the critical texts is returned
