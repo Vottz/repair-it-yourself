@@ -10,11 +10,11 @@ This is the Documentation for our university project, in the course [Hacking Inn
 
 ## Functions
 Our Arduino code has 4 Functions: 
-* setup(): the typical arduino setup function, here we define the randomSeed for the random number generator, the <LCDs groove text> matrix for setting the display functions and some of the LED lights <DO WE??>.
-* calcRangeInCentimeters(): calculates the distance from the <INSERT NAME OF SENSOR + LINK> in centimeters
+* setup(): the typical arduino setup function, here we define the randomSeed for the random number generator, the <LCDs groove text> matrix for setting the display functions and some of the LED lights.
+* calcRangeInCentimeters(): calculates the distance wth help of the [Ultrasonic-Sensor-sr04](https://create.arduino.cc/projecthub/abdularbi17/ultrasonic-sensor-hc-sr04-with-arduino-tutorial-327ff6) in centimeters
 * randomText(int randNum): with the input of a random number between 0 and 6, one of the critical texts is returned
 * loop(): the typical arduino "main" function, that gets executed repeatedly. Here we use the previous two functions, as explained above.
-In each iteration, we generate a random number for the randomText() function and then assign a color to that text (specifying the gender-role we are critisizign with that text). Then the calcRangeInCentimeters() function is used to determine if something is 20cm in front of the sensor, if yes the text and color are displayed on the <LCD GROOVE LIGHT????> and the LEDs light up. We implemented a 3second delay which should be enough time for the observer to read the text. 
+In each iteration, we generate a random number for the randomText() function and then assign a color to that text (specifying the gender-role we are critisizign with that text). Then the calcRangeInCentimeters() function is used to determine if something is 20cm in front of the sensor, if yes the text and color are displayed on the [Grove-LCD RGB Backlight](https://wiki.seeedstudio.com/Grove-LCD_RGB_Backlight/) and the LEDs light up. We implemented a 3 second delay which should be enough time for the observer to read the text. 
 
 ## Resources used
 ### Libraries
