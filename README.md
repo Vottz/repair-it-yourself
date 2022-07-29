@@ -25,7 +25,7 @@ In each iteration, we generate a random number for the randomText() function and
 * [Ultrasonic Ranger (wiki.seedstudio.com)](https://wiki.seeedstudio.com/Grove-Ultrasonic_Ranger/)
 * [LED circuit (arduino.cc)](https://create.arduino.cc/projecthub/rowan07/make-a-simple-led-circuit-ce8308)
 * [LCD display(arduino.cc)](https://docs.arduino.cc/learn/electronics/lcd-displays)
-* And many thanks to [Carolin Clausnitzer](https://www.technologiestiftung-berlin.de/profil/team/carolin-clausnitzer) & [Ninett Rosenfeld](https://www.technologiestiftung-berlin.de/profil/team/ninett-rosenfeld) from the [Technologiestiftung Berlin](https://www.technologiestiftung-berlin.de/), who provided us with the basics and initial functions in their "Digital Workshop Creative Making mit Arduinos".
+* And many thanks to [Carolin Clausnitzer](https://www.technologiestiftung-berlin.de/profil/team/carolin-clausnitzer) & [Ninett Rosenfeld](https://www.technologiestiftung-berlin.de/profil/team/ninett-rosenfeld) from the [Technologiestiftung Berlin](https://www.technologiestiftung-berlin.de/), who provided us with the basics and initial functions in their "Digital Workshop Creative Making mit Arduinos". Additionally we would like to thank the [Technologiestiftung Berlin](https://www.technologiestiftung-berlin.de/) in general for lending us the Arduinos, which made this artefact possible.
 
 ## Contributors
 Kevin Kreutz  
