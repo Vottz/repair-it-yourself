@@ -5,7 +5,7 @@ This is the Documentation for our university project, in the course [Hacking Inn
 
 
 ## Arduino setup
-<ToDo>
+See [Hardware Setup](hardware.md)
 
 
 ## Functions
