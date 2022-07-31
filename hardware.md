@@ -1,6 +1,5 @@
-# Hardware Installation (Additional pictures)
-
-| extbf{Name}                                                                                                               | \textbf{Quantität} |
+# Hardware Overview
+| Name                                                                                                            | Quantität |
 |---------------------------------------------------------------------------------------------------------------------------|--------------------|
 | Arduino Uno Rev3 SMD                                                                                                      | 1                  |
 | mit USB Stromkabel                                                                                                        |                    |
@@ -13,6 +12,11 @@
 | Stecker (male-to-male)                                                                                                    | 8                  |
 | Metallschichtwiderstand                                                                                                   | 2                  |
 | 10.0K Ohm 0.25 Watt PTH                                                                                                   |                    |
+
+
+# Hardware Installation (Additional pictures)
+
+
 
 
 <img src="img/full.jpeg" alt="Full" width="400"/> <img src="img/full2.jpg" alt="Full2" width="500"/> <br>
