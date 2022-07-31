@@ -13,6 +13,7 @@
 | Metallschichtwiderstand                                                                                                   | 2                  |
 | 10.0K Ohm 0.25 Watt PTH                                                                                                   |                    |
 
+For Details on Installation of the Hardware, click on the Links in the table. 
 
 # Hardware Installation (Additional pictures)
 
